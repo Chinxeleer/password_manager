@@ -10,6 +10,7 @@ diesel::table! {
         #[max_length = 18]
         password -> Varchar,
         date_created -> Date,
+        date_modified -> Nullable<Timestamp>,
         in_use_by -> Nullable<Array<Nullable<Text>>>,
     }
 }

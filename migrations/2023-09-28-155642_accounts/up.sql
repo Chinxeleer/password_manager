@@ -5,6 +5,7 @@ CREATE TABLE accounts(
     email_address VARCHAR(50) NOT NULL,
     password VARCHAR(18) NOT NULL,
     date_created DATE NOT NULL DEFAULT CURRENT_DATE,
-    date_modified DATE NOT NULL NOW,
+    date_modified TIMESTAMP ,
     in_use_by TEXT[]
 );
+

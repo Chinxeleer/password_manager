@@ -14,35 +14,38 @@ pub struct Cli {
 pub struct Account {
     #[arg(default_value_t=String::from("chinxeleer"),short,long)]
     /// username registered
-    username: String,
+    pub username: String,
     #[arg(short, long)]
     /// email address used in making the account
-    email_address: String,
+    pub email_address: String,
     #[arg(short, long)]
     /// the account's password
-    password: String,
+    pub password: String,
+
+    #[arg(short, long)]
+    pub in_use_by: Vec<String>,
 }
 
 #[derive(Args, Debug)]
 pub struct DeleteAccount {
-    id: i32,
+    pub id: i32,
 }
 
 #[derive(Args, Debug)]
 pub struct UpdateAccount {
-    id: i32,
-    username: Option<String>,
-    password: Option<String>,
+    pub id: i32,
+    pub username: Option<String>,
+    pub password: Option<String>,
 }
 
 #[derive(Args, Debug)]
 pub struct Site {
-    id: i32,
-    site: Vec<String>,
+    pub id: i32,
+    pub site: Vec<String>,
 }
 
 #[derive(Debug, Args)]
 pub struct UserCommand {
     #[command(subcommand)]
-    command: UserSubCommand,
+    pub command: UserSubCommand,
 }
