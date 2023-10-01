@@ -66,10 +66,11 @@ fn show_accounts() {
         .expect("Error loading accounts");
     print!("\n");
 
-    for entries in &accounts_returned {
-        println!("{:?}", entries);
+    if accounts_returned.is_empty() {
+        println!("No accounts created");
+    } else {
+        for entries in &accounts_returned {
+            println!("{:?}", entries);
+        }
     }
 }
-
-
- 
