@@ -1,6 +1,6 @@
 # password_manager
 
-Chinxeleer is a password manager created using Rust lang and Diesel ORM engine using postgres as my database.
+Chinxeleer is a password manager created using [Rust](https://www.rust-lang.org/) and [Diesel ORM engine](https://diesel.rs/) using postgres as my database.
 
 ## How to use?
 
