@@ -1,11 +1,17 @@
-# password_manager
+# 🔐 Chinxeleer
 
-Chinxeleer is a password manager created using [Rust](https://www.rust-lang.org/) and [Diesel ORM engine](https://diesel.rs/) using postgres as my database.
+A zero-bullshit password manager built with **Rust**, **Diesel**, and **PostgreSQL**. No runtime surprises, just compile-time guarantees and type safety. Because memory safety isn't optional.
 
-## How to use?
+## What You Get
 
-1. Clone the repo to your local machine to a folder of your choice
-2. Create a .env file in the project root directory.
-3. Copy and paste this code `DATABASE_URL=postgres://username:password@localhost/diesel_demo`
-4. Replace the username,password and diesel_demo with database name of your choice
-5. Run ` chinxeleer account ` in your terminal to get help.
+- **Rust** — Borrow checker keeping your secrets secure (and your code valid)
+- **Diesel ORM** — Compile-time query checking so SQL injection is literally impossible
+- **PostgreSQL** — Battle-tested, ACID-compliant storage for all your passwords
+
+## Quick Start
+
+1. Clone this repo
+2. Create a `.env` file: `DATABASE_URL=postgres://username:password@localhost/your_db`
+3. Run `chinxeleer account --help` to see what's cooking
+
+That's it. No bloat, no fuss.
